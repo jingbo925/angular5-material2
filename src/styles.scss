@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+html, body, app-root, .site, mat-sidenav-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+}
+
+//flex 只对当前元素的子元素有直接影响
+main {
+  flex: 1;
+  display: flex;
+}
+
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
