@@ -10,7 +10,9 @@ import {AppComponent} from "./app.component";
 
 const routes: Routes = [
   {path: '', redirectTo:'/login', pathMatch:'full'},
-  // {path: 'path', component:AppComponent}
+  {path: 'project', redirectTo:'/project', pathMatch:'full'},
+  {path: 'task', redirectTo:'/tasklists', pathMatch:'full'},
+  // {path: 'project', component:AppComponent}
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
