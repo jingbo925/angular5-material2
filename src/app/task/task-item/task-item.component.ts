@@ -19,7 +19,7 @@ export class TaskItemComponent implements OnInit {
   }
 
   onCheckBoxClick(ev: Event) {
-    ev.stopPropagation()；// 阻止时间继续往外传播
+    ev.stopPropagation();// 阻止时间继续往外传播
   }
 
 }

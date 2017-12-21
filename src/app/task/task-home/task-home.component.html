@@ -6,6 +6,8 @@
       [header]="list.name"
       (newTask)="launchNewTaskDialog()"
       (moveAll)="launchCopyTaskDialog()"
+      (dellist)="launchConfirmDialog()"
+      (editlist)="launchEditListDialog()"
     ></app-task-header>
 
     <app-task-item
@@ -16,6 +18,6 @@
     </app-task-item>
   </app-task-list>
 </div>
-<button mat-fab type="button" class="fab-button" (click)="openNewProjectDialog()">
+<button mat-fab type="button" class="fab-button" (click)="openNewListDialog()">
   <mat-icon>add</mat-icon>
 </button>
