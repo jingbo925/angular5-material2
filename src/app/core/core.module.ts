@@ -1,7 +1,7 @@
 import { NgModule,SkipSelf,Optional } from '@angular/core';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-
-import { CommonModule } from '@angular/common';import { HeaderComponent } from './header/header.component';
+import {AppRoutingModule} from "../app-routing.module";
+import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import {ShareModule} from "../share/share.module";
@@ -9,11 +9,14 @@ import {ShareModule} from "../share/share.module";
 @NgModule({
   imports: [
     ShareModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   declarations: [HeaderComponent, FooterComponent, SidebarComponent],
   exports: [
-    HeaderComponent, FooterComponent, SidebarComponent
+    HeaderComponent, FooterComponent, SidebarComponent,
+    AppRoutingModule,
+    BrowserAnimationsModule
   ]
 })
 export class CoreModule {
